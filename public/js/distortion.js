@@ -1,6 +1,8 @@
+// distort the sound
 distortion.curve = makeDistortionCurve(4);
 distortion.oversample = "4x";
 
+// taken from Jakob Sudau
 function makeDistortionCurve(amount) {
     var n_samples = 44100,
         curve = new Float32Array(n_samples);
