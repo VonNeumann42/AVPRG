@@ -1,0 +1,489 @@
+/********************************/
+/********* piano.html **********/
+/********************************/
+
+/* schwarzer Hintergrund (Allgemein) */
+body {
+    background-color: black;
+}
+
+/* grauer unterer Hintergrund*/
+#backgroundGrey {
+    position: fixed;
+    top: 48%;
+    left: 0%;
+    width: 100%;
+    height: 55%;
+    background-color: rgb(90, 90, 90);
+    z-index: -1;
+}
+
+/* weißer Hintergrund hinter den Tasten */
+#backgroundPiano {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    width: 98%;
+    height: 48.5%;
+    background-color: white;
+    z-index: 0;
+}
+
+/* Label */
+#logoPiano {
+    position: absolute;
+    left: 20%;
+    top: 4%;
+}
+
+/* ALLE WEIßEN TASTEN */
+/* 1. Taste ganz links */
+#whiteRectangle1{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    border-radius: 0px 0px 5px 5px;
+     
+}
+
+/* 2. Taste */
+#whiteRectangle2{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid;  
+    position: absolute;
+    bottom: 1%;
+    left: 8%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 3. Taste */
+#whiteRectangle3{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 4. Taste */
+#whiteRectangle4{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 22%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 5. Taste */
+#whiteRectangle5{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 29%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 6. Taste */
+#whiteRectangle6{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 36%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 7. Taste */
+#whiteRectangle7{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 43%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* ALLE WEIßEN TASTEN */
+/* 8. Taste */
+#whiteRectangle8{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    border-radius: 0px 0px 5px 5px;
+     
+}
+
+/* 9. Taste */
+#whiteRectangle9{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid;  
+    position: absolute;
+    bottom: 1%;
+    left: 57%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 10. Taste */
+#whiteRectangle10{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 64%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 11. Taste */
+#whiteRectangle11{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 71%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 12. Taste */
+#whiteRectangle12{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 78%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 13. Taste */
+#whiteRectangle13{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 85%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* 14. Taste */
+#whiteRectangle14{
+    background-image:url('/images/TasteW.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7%;
+    height: 49%;
+    border: 1px black solid; 
+    position: absolute;
+    bottom: 1%;
+    left: 92%;
+    right: 1%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*********************************/
+/* ALLE SCHWARZEN TASTEN */
+/* 1. Taste ganz links */
+#blackRectangle1{
+    /* background-color: black; */
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 5%;
+    border-radius: 0px 0px 8px 8px;   
+    z-index: 1; 
+}
+
+/* 2. Taste */
+#blackRectangle2{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 13.5%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 3. Taste */
+#blackRectangle3{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 26%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 4. Taste */
+#blackRectangle4{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 34%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 5. Taste */
+#blackRectangle5{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 42%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 6. Taste ganz links */
+#blackRectangle6{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 54%;
+    border-radius: 0px 0px 8px 8px;    
+}
+
+/* 7. Taste */
+#blackRectangle7{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 62.5%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 8. Taste */
+#blackRectangle8{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 75%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 9. Taste */
+#blackRectangle9{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 83%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/* 10. Taste */
+#blackRectangle10{
+    background-color: black;
+    background-image:url('/images/TasteS.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 29.5%;
+    border: 1px black solid; 
+    border-left: 1px black; 
+    position: absolute;
+    bottom: 20.5%;
+    left: 91%;
+    border-radius: 0px 0px 8px 8px;   
+}
+
+/********************************/
+/********* index.html **********/
+/********************************/
+
+/* Nachnamen */
+#lastnameText {
+    position: absolute;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    top: 0.5%;
+    left: 1%;
+    font-size: 80%;
+}
+
+/* Label */
+#logoCamera {
+    position: absolute;
+    left: 31%;
+    top: 4%;
+}
+
+/* Noten */
+#notes {
+    position: absolute;
+    left: 0.5%;
+    top: 20%;
+    rotate: 30%;
+}
+
+/* Instruction Text*/
+#instructionText {
+    position: absolute;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    top: 35%;
+    left: 40.2%;
+    font-size: 120%;
+}
+
+/* Countdown Text*/
+#countdownText {
+    position: absolute;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    top: 55.5%;
+    left: 80%;
+    font-size: 120%;
+}
+
+/* Colorbox */
+#colorbox {
+    background-color: white;
+    width: 20%;
+    height: 20%; 
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+/* grauer Hintergrund hinter dem Farbfeld */
+#backgroundColorbox {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(90, 90, 90);
+    z-index: -1;
+}
+
+/* Marker */
+.dot {
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    z-index: 2;
+  }

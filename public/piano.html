@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Piano</title>
+        <script src="/js/socket.io.js"></script>
+		<script src="/js/synth.js"></script>
+    </head>
+    <body  onload="initialize()">
+        
+        <!-- Label -->
+        <div class = "img">
+            <img src="/images/logoW.png" id="logoPiano" width= "933" height="191"> 
+        </div>
+
+        <!-- Nachnamen -->
+        <p id="lastnameText">Braun 2365827 
+                            <br/>Hansen 2364148
+                            <br/>Heindorf 2364947</p>
+
+        <!-- Hintergrund -->
+        <div id = "backgroundGrey"></div>
+        <div id = "backgroundPiano"></div>
+
+        <!-- Marker -->
+        <span class="dot" id="marker1"></span>
+        <span class="dot" id="marker2"></span>
+        
+        <!-- Alle weißen Tasten -->
+        <div id = "whiteRectangle1" class = "keys"></div>
+        <div id = "whiteRectangle2" class = "keys"></div>
+        <div id = "whiteRectangle3" class = "keys"></div>
+        <div id = "whiteRectangle4" class = "keys"></div>
+        <div id = "whiteRectangle5" class = "keys"></div>
+        <div id = "whiteRectangle6" class = "keys"></div>
+        <div id = "whiteRectangle7" class = "keys"></div>
+
+        <div id = "whiteRectangle8" class = "keys"></div>
+        <div id = "whiteRectangle9" class = "keys"></div>
+        <div id = "whiteRectangle10" class = "keys"></div>
+        <div id = "whiteRectangle11" class = "keys"></div>
+        <div id = "whiteRectangle12" class = "keys"></div>
+        <div id = "whiteRectangle13" class = "keys"></div>
+        <div id = "whiteRectangle14" class = "keys"></div>
+
+        <!-- Alle schwarzen Tasten -->
+        <div id = "blackRectangle1" class = "keys"></div>
+        <div id = "blackRectangle2" class = "keys"></div>
+        <div id = "blackRectangle3" class = "keys"></div>
+        <div id = "blackRectangle4" class = "keys"></div>
+        <div id = "blackRectangle5" class = "keys"></div>
+
+        <div id = "blackRectangle6" class = "keys"></div>
+        <div id = "blackRectangle7" class = "keys"></div>
+        <div id = "blackRectangle8" class = "keys"></div>
+        <div id = "blackRectangle9" class = "keys"></div>
+        <div id = "blackRectangle10" class = "keys"></div>
+
+        <script src="/js/envelope.js"></script>
+        <script src="/js/distortion.js"></script>
+        <script src="/js/convolver.js"></script>
+        <script src="/js/synth.js"></script>
+        <script src="/js/marker.js"></script>
+    </body>
+</html>
