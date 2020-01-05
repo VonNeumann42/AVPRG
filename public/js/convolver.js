@@ -1,5 +1,7 @@
+// add room-sound
 loadImpulseResponse("room");
 
+// function taken from Jakob Sudau
 function loadImpulseResponse(name){
     var request = new XMLHttpRequest();
     request.open("GET",  ("sounds/impulseResponses/" + name + ".wav"), true);
